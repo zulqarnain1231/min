@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.recomendation {
+  clip-path: polygon(100% 0, 0 0, 52% 15%);
+}
