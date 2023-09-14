@@ -41,6 +41,7 @@ const Navbar = () => {
             className="w-full h-full object-contain"
             src={"/Assets/Logo.png"}
             alt=""
+            priority
             fill
           />
         </Link>
@@ -75,7 +76,7 @@ const Navbar = () => {
         style={{ width: "100%" }}
         className="bg-white-main/30"
       >
-        <div className="w-full flex flex-col items-start justify-start">
+        <div className="w-full flex flex-col items-start justify-start bg-white-main/30">
           <div className="w-full flex items-center justify-end p-4 border-b-[2px]">
             <button onClick={toggleDrawer}>
               <ImCross className="text-[24px] text-black-main" />

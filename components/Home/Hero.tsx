@@ -14,6 +14,7 @@ const Hero = () => {
                 className="h-full w-full object-contain"
                 src={"/Assets/Hero/title.png"}
                 alt=""
+                priority
                 fill
               />
             </div>
@@ -22,6 +23,7 @@ const Hero = () => {
                 className="h-full w-full object-contain"
                 src={"/Assets/Hero/content-yellow.png"}
                 alt=""
+                priority
                 fill
               />
             </div>
@@ -30,6 +32,7 @@ const Hero = () => {
                 className="h-full w-full object-contain"
                 src={"/Assets/Hero/rounded-content.png"}
                 alt=""
+                priority
                 fill
               />
             </div>
@@ -38,6 +41,7 @@ const Hero = () => {
                 className="h-full w-full object-contain"
                 src={"/Assets/Hero/price.png"}
                 alt=""
+                priority
                 fill
               />
             </div>
@@ -47,6 +51,7 @@ const Hero = () => {
               className="w-full h-full object-fill"
               src={"/Assets/Hero/Hero.png"}
               alt=""
+              priority
               fill
             />
           </div>
