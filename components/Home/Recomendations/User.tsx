@@ -27,7 +27,7 @@ const User: React.FC<Props> = ({ detail, picture }: Props) => {
         <div className="absolute z-10 -bottom-36 right-0">
           <div className="relative h-[176px] w-[210px]">
             <Image
-              className="w-full h-full object-contain"
+              className="w-full h-full object-contain pointer-events-none"
               src={picture}
               alt=""
               priority
