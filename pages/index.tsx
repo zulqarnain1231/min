@@ -3,6 +3,8 @@ import { Zen_Maru_Gothic } from "next/font/google";
 import Navbar from "@/components/Shared/Navigation/Navbar";
 import Hero from "@/components/Home/Hero";
 import Recomendation from "@/components/Home/Recomendations/Recomendation";
+import Description from "@/components/Home/Description";
+import Services from "@/components/Home/Services/Services";
 
 const zen = Zen_Maru_Gothic({
   subsets: ["latin"],
@@ -17,6 +19,8 @@ export default function Home() {
         <Hero />
       </div>
       <Recomendation />
+      <Description />
+      <Services />
     </main>
   );
 }
