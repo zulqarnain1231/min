@@ -15,6 +15,7 @@ const config: Config = {
         },
         black: {
           main: "#000000",
+          secondary: "#343434",
         },
         white: {
           main: "#FFFFFF",
