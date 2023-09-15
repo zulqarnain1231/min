@@ -18,9 +18,14 @@ const Navbar = () => {
       route: "#",
     },
     {
+      name: "料金",
+      route: "fee",
+    },
+    {
       name: "お客様の声",
       route: "#",
     },
+
     {
       name: "よくある質問",
       route: "#",
