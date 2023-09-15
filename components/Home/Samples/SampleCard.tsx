@@ -17,7 +17,7 @@ const SampleCard: React.FC<Props> = ({ image, content }: Props) => {
           fill
         />
       </div>
-      <p className="text-black-main text-center text-2xl font-semibold">
+      <p className="text-black-main text-center sm:text-[22px] text-xl font-semibold">
         {content}
       </p>
     </div>
