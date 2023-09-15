@@ -6,12 +6,16 @@ interface Props {
   image: string;
   heading: string;
   detail: string;
+  titleBackground?: string;
+  backgroundStyle?: string;
 }
 
 const ServiceCard: React.FC<Props> = ({
   number,
   image,
   heading,
+  titleBackground = "bg-[url('/Assets/Services/largeunderline.png')]",
+  backgroundStyle = "bg-top bg-contain",
   detail,
 }: Props) => {
   return (
@@ -29,7 +33,9 @@ const ServiceCard: React.FC<Props> = ({
           <p className="text-[#22BA4F] text-left sm:text-7xl text-5xl font-semibold">
             {number}
           </p>
-          <p className="text-black-main text-left sm:text-3xl text-2xl font-semibold">
+          <p
+            className={`text-black-main text-left sm:text-3xl text-2xl font-semibold  ${titleBackground} ${backgroundStyle} bg-no-repeat`}
+          >
             {heading}
           </p>
         </div>
