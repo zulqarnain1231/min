@@ -5,6 +5,7 @@ import Hero from "@/components/Home/Hero";
 import Recomendation from "@/components/Home/Recomendations/Recomendation";
 import Description from "@/components/Home/Description";
 import Services from "@/components/Home/Services/Services";
+import Samples from "@/components/Home/Samples/Samples";
 
 const zen = Zen_Maru_Gothic({
   subsets: ["latin"],
@@ -21,6 +22,7 @@ export default function Home() {
       <Recomendation />
       <Description />
       <Services />
+      <Samples />
     </main>
   );
 }
