@@ -18,6 +18,7 @@ const config: Config = {
         },
         white: {
           main: "#FFFFFF",
+          off: "#F1F6F7",
         },
       },
       backgroundImage: {
