@@ -7,6 +7,7 @@ import Description from "@/components/Home/Description";
 import Services from "@/components/Home/Services/Services";
 import Samples from "@/components/Home/Samples/Samples";
 import Price from "@/components/Home/Price";
+import Voice from "@/components/Home/Voice/Voice";
 
 const zen = Zen_Maru_Gothic({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function Home() {
       <Services />
       <Samples />
       <Price />
+      <Voice />
     </main>
   );
 }
