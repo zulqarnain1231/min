@@ -2,8 +2,40 @@ import SectionTitle from "@/components/Shared/Typography/SectionTitle";
 import ComponentWrapper from "@/components/Shared/Wrappers/ComponentWrapper";
 import Image from "next/image";
 import React from "react";
+import ServiceCard from "./ServiceCard";
 
 const Services = () => {
+  const services = [
+    {
+      number: "01",
+      image: "/Assets/Services/watch.png",
+      heading:
+        " 最短即日で信頼感のあるコーポレートサイトを低価格で公開できます。",
+      detail:
+        "  ミニッツは信頼感のあるコーポレートサイトを短時間で作成することが出来るサービスです。どんなサイトになるかイメージを確認してから購入できるので初めての方でも安心です。",
+    },
+    {
+      number: "02",
+      image: "/Assets/Services/messege.png",
+      heading: "デザインの知識も不要。 LINEで質問に答えるだけで完成！",
+      detail:
+        "  コーポレートサイト制作に必要な要素やデザインはミニッツにお任せください。質問にお答えいただくだけで信頼感のあるコーポレートサイトをご提案いたします。",
+    },
+    {
+      number: "03",
+      image: "/Assets/Services/app.png",
+      heading: "サイトの更新もLINEで完結。 難しい操作は必要ありません。",
+      detail:
+        "  サイトの更新もLINEで。スマホがあればいつでもどこでもサイトを更新することが出来ます。（PCでも更新は可能です）こまめに情報発信をすることで検索結果の向上が期待できます。",
+    },
+    {
+      number: "04",
+      image: "/Assets/Services/settings.png",
+      heading: " デザインは自動でアップデート。 放置していても古くなりません。",
+      detail:
+        "  一般的なウェブ制作では制作した時点でデザインのアップデートは止まります。ミニッツにデザインをお任せいただければ新しい技術やデザインのトレンドに併せて自動的にアップデートいたします。",
+    },
+  ];
   return (
     <ComponentWrapper
       id="services"
@@ -11,28 +43,16 @@ const Services = () => {
     >
       <div className="w-full flex flex-col items-center justify-start gap-16">
         <SectionTitle english="SERVICE" japnese=" サービスの特徴" />
-        <div className="md:w-[90%] xl:w-[80%] w-full grid lg:place-items-start place-items-center lg:grid-cols-[1fr,3fr] lg:gap-2 gap-0 bg-white-main shadow-lg rounded-[20px] md:p-8 p-4">
-          <div className="w-[168px] h-[170px] relative">
-            <Image
-              className="h-full w-full object-contain pointer-events-none"
-              src={"/Assets/Services/watch.png"}
-              alt=""
-              fill
+        <div className="w-full flex flex-col items-center justify-start md:gap-10 sm:gap-6 gap-4">
+          {services.map((item: any, index: number) => (
+            <ServiceCard
+              key={index}
+              number={item.number}
+              image={item.image}
+              detail={item.detail}
+              heading={item.heading}
             />
-          </div>
-          <div className="w-full flex flex-col items-center justify-start gap-2">
-            <div className="w-full flex lg:flex-row flex-col lg:items-center items-start justify-start gap-2">
-              <p className="text-[#22BA4F] text-left sm:text-7xl text-5xl font-semibold">
-                01
-              </p>
-              <p className="text-black-main text-left sm:text-3xl text-2xl font-semibold">
-                最短即日で信頼感のあるコーポレートサイトを低価格で公開できます。
-              </p>
-            </div>
-            <p className="sm:text-lg text-base text-black-main text-left font-medium">
-              ミニッツは信頼感のあるコーポレートサイトを短時間で作成することが出来るサービスです。どんなサイトになるかイメージを確認してから購入できるので初めての方でも安心です。
-            </p>
-          </div>
+          ))}
         </div>
       </div>
     </ComponentWrapper>
