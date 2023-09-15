@@ -31,7 +31,7 @@ const FaqCard: React.FC<Props> = ({ question, answer }: Props) => {
             fill
           />
         </div>
-        <p className="text-black-main text-left sm:text-lg text-base font-medium">
+        <p className="text-black-main text-left sm:text-lg text-base font-medium lg:w-[75%]">
           {answer}
         </p>
       </div>
