@@ -22,6 +22,9 @@ const config: Config = {
           off: "#F1F6F7",
         },
       },
+      fontFamily: {
+        noto: ["Noto Sans JP", "sans-serif"],
+      },
       backgroundPosition: {
         bottom: "bottom",
         "bottom-4": "center bottom 1rem",

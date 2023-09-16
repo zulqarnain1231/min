@@ -4,31 +4,10 @@ import ComponentWrapper from "@/components/Shared/Wrappers/ComponentWrapper";
 import * as Icons from "../../../constants/Svg/Icons";
 import Image from "next/image";
 import VoiceCard from "./VoiceCard";
+import Data from "../../../constants/Data/Data.json";
 
 const Voice = () => {
-  const voices = [
-    {
-      name: "A.B様",
-      age: "（30代前半/男性）",
-      title: "帰りの電車にはもう出来てて",
-      detail:
-        "登記の書類を出しに法務局に向かった帰りだったんですが、たまたまこのサービスを知って、試しにと思ってチャットを開いてみたんです。聞かれる質問は登記の時に考えた内容でしたから最寄駅に着く前にはサイトができていました。",
-    },
-    {
-      name: "A.B様",
-      age: "（30代前半/男性）",
-      title: "サイト綺麗ですね！って言われます",
-      detail:
-        "取引先から言われた時はリップサービスかなって思ってたんですが娘も「お父さんの会社のサイトカッコいいね」って言われて、今まで会社の事なんて興味持たなかったんですが「こんな事してるんだー」とか、自然に会話されるようになりました。",
-    },
-    {
-      name: "A.B様",
-      age: "（30代前半/男性）",
-      title: "帰りの電車にはもう出来てて",
-      detail:
-        "登記の書類を出しに法務局に向かった帰りだったんですが、たまたまこのサービスを知って、試しにと思ってチャットを開いてみたんです。聞かれる質問は登記の時に考えた内容でしたから最寄駅に着く前にはサイトができていました。",
-    },
-  ];
+  const { voices } = Data;
   return (
     <ComponentWrapper id="voice" style="lg:py-16 py-10">
       <div className="w-full flex flex-col items-center justify-start sm:gap-16 gap-10 ">

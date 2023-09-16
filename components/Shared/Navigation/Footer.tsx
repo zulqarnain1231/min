@@ -3,30 +3,11 @@ import ComponentWrapper from "../Wrappers/ComponentWrapper";
 import Image from "next/image";
 import Link from "next/link";
 import * as Icons from "../../../constants/Svg/Icons";
-const Footer = () => {
-  const menu = [
-    {
-      name: "商品特徴",
-      route: "#",
-    },
-    {
-      name: "制作サンプル",
-      route: "#",
-    },
-    {
-      name: "料金",
-      route: "fee",
-    },
-    {
-      name: "お客様の声",
-      route: "#",
-    },
+import Data from "../../../constants/Data/Data.json";
 
-    {
-      name: "よくある質問",
-      route: "#",
-    },
-  ];
+const Footer = () => {
+  const { menu } = Data;
+
   return (
     <ComponentWrapper id="footer" style="bg-white-main py-10">
       <nav className="md:w-[90%] xl:w-[80%] w-full flex flex-col items-center justify-start gap-10 mx-auto">
@@ -46,11 +27,13 @@ const Footer = () => {
               />
             </Link>
             <div className="w-full flex lg:flex-nowrap flex-wrap items-center md:justify-start justify-center gap-4">
-              <p className="text-black-main text-sm font-medium">運営会社</p>
-              <p className="text-black-main text-sm font-medium">
+              <p className="text-black-main text-sm font-medium font-noto">
+                運営会社
+              </p>
+              <p className="text-black-main text-sm font-medium font-noto">
                 プライバシーポリシー
               </p>
-              <p className="text-black-main text-sm font-medium">
+              <p className="text-black-main text-sm font-medium font-noto">
                 特定商取引法に関する表記
               </p>
             </div>
@@ -76,7 +59,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <p className="text-center text-black-main text-sm font-normal">
+        <p className="text-center text-black-main text-sm font-normal font-noto">
           © min Co., Ltd. All Rights Reserved.
         </p>
       </nav>

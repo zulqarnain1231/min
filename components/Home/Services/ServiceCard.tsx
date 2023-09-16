@@ -39,7 +39,7 @@ const ServiceCard: React.FC<Props> = ({
             {heading}
           </p>
         </div>
-        <p className="sm:text-lg text-base text-black-main text-left font-medium">
+        <p className="sm:text-lg text-base text-black-main text-left font-medium font-noto">
           {detail}
         </p>
       </div>

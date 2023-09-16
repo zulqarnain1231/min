@@ -7,30 +7,11 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { ImCross } from "react-icons/im";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
-const Navbar = () => {
-  const menu = [
-    {
-      name: "商品特徴",
-      route: "#",
-    },
-    {
-      name: "制作サンプル",
-      route: "#",
-    },
-    {
-      name: "料金",
-      route: "fee",
-    },
-    {
-      name: "お客様の声",
-      route: "#",
-    },
+import Data from "../../../constants/Data/Data.json";
 
-    {
-      name: "よくある質問",
-      route: "#",
-    },
-  ];
+const Navbar = () => {
+  const { menu } = Data;
+
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const toggleDrawer = () => {
     setIsOpen((prevvalue) => !prevvalue);

@@ -1,0 +1,137 @@
+{
+  "menu": [
+    {
+      "name": "商品特徴",
+      "route": "#"
+    },
+    {
+      "name": "制作サンプル",
+      "route": "#"
+    },
+    {
+      "name": "料金",
+      "route": "fee"
+    },
+    {
+      "name": "お客様の声",
+      "route": "#"
+    },
+
+    {
+      "name": "よくある質問",
+      "route": "#"
+    }
+  ],
+  "services": [
+    {
+      "number": "01",
+      "image": "/Assets/Services/watch.png",
+      "background": "bg-[url('/Assets/Services/largeunderline.png')]",
+      "backgroundStyle": "bg-top-left-4 bg-[length:120px_20px]",
+      "heading": " 最短即日で信頼感のあるコーポレートサイトを低価格で公開できます。",
+      "detail": "  ミニッツは信頼感のあるコーポレートサイトを短時間で作成することが出来るサービスです。どんなサイトになるかイメージを確認してから購入できるので初めての方でも安心です。"
+    },
+    {
+      "number": "02",
+      "image": "/Assets/Services/messege.png",
+      "heading": "デザインの知識も不要。 LINEで質問に答えるだけで完成！",
+      "background": "bg-[url('/Assets/Services/largeunderline.png')]",
+      "backgroundStyle": "bg-bottom bg-contain",
+      "detail": "  コーポレートサイト制作に必要な要素やデザインはミニッツにお任せください。質問にお答えいただくだけで信頼感のあるコーポレートサイトをご提案いたします。"
+    },
+    {
+      "number": "03",
+      "image": "/Assets/Services/app.png",
+      "heading": "サイトの更新もLINEで完結。 難しい操作は必要ありません。",
+      "background": "bg-[url('/Assets/Services/largeunderline.png')]",
+      "backgroundStyle": "bg-top-4 bg-contain",
+      "detail": "  サイトの更新もLINEで。スマホがあればいつでもどこでもサイトを更新することが出来ます。（PCでも更新は可能です）こまめに情報発信をすることで検索結果の向上が期待できます。"
+    },
+    {
+      "number": "04",
+      "image": "/Assets/Services/settings.png",
+      "heading": " デザインは自動でアップデート。 放置していても古くなりません。",
+      "background": "bg-[url('/Assets/Services/largeunderline.png')]",
+      "backgroundStyle": "bg-top-4 bg-contain",
+      "detail": "  一般的なウェブ制作では制作した時点でデザインのアップデートは止まります。ミニッツにデザインをお任せいただければ新しい技術やデザインのトレンドに併せて自動的にアップデートいたします。"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "どれくらいでホームページを公開できますか？",
+      "answer": " 最短でお申込日〜3営業日程度で公開が可能です。"
+    },
+    {
+      "question": "支払い方法はどのようになりますか？",
+      "answer": " 請求書払いでございます、請求書は郵送またはメールで送付致します。"
+    },
+    {
+      "question": "最低契約期間はありますか？",
+      "answer": " 最低契約期間は1年です。"
+    },
+    {
+      "question": "自分でHPを更新できますか？",
+      "answer": " チャットからいつでも更新可能です。"
+    },
+    {
+      "question": "独自ドメインは使用できますか？",
+      "answer": "ミニッツで取得できるドメインは.com,.net,.info,.jpをはじめとした主要ドメインが取得可能です。 ※その他のドメインをご希望の場合はご自身で取得いただく必要がございます。"
+    },
+    {
+      "question": "解約すると作成したホームページはどうなりますか？",
+      "answer": "解約後、ホームページのコンテンツは削除され、閲覧できなくなります。 ドメインは「移管」または「廃止」のいずれかが選択可能です。"
+    },
+    {
+      "question": "お問い合わせフォームは利用できますか？",
+      "answer": "ご利用いただけます。メールフォームをお客様でカスタマイズが可能です。"
+    }
+  ],
+  "recomendations": [
+    {
+      "detail": " 会社の事を知ってもらえるよう 名刺の代わりにしたい",
+      "picture": "/Assets/Recomendations/user1.png"
+    },
+    {
+      "detail": " 会社の事やサービスの 情報発信をしたい",
+      "picture": "/Assets/Recomendations/user2.png"
+    },
+    {
+      "detail": " ホームページによる 信頼の獲得をしたい",
+      "picture": "/Assets/Recomendations/user3.png"
+    }
+  ],
+  "samples": [
+    {
+      "image": "/Assets/Samples/sample1.png",
+      "content": " ITスタートアップ系"
+    },
+    {
+      "image": "/Assets/Samples/sample2.png",
+      "content": "ハンドメイドメーカー系サイト"
+    },
+    {
+      "image": "/Assets/Samples/sample3.png",
+      "content": "士業系サイト"
+    }
+  ],
+  "voices": [
+    {
+      "name": "A.B様",
+      "age": "（30代前半/男性）",
+      "title": "帰りの電車にはもう出来てて",
+      "detail": "登記の書類を出しに法務局に向かった帰りだったんですが、たまたまこのサービスを知って、試しにと思ってチャットを開いてみたんです。聞かれる質問は登記の時に考えた内容でしたから最寄駅に着く前にはサイトができていました。"
+    },
+    {
+      "name": "A.B様",
+      "age": "（30代前半/男性）",
+      "title": "サイト綺麗ですね！って言われます",
+      "detail": "取引先から言われた時はリップサービスかなって思ってたんですが娘も「お父さんの会社のサイトカッコいいね」って言われて、今まで会社の事なんて興味持たなかったんですが「こんな事してるんだー」とか、自然に会話されるようになりました。"
+    },
+    {
+      "name": "A.B様",
+      "age": "（30代前半/男性）",
+      "title": "帰りの電車にはもう出来てて",
+      "detail": "登記の書類を出しに法務局に向かった帰りだったんですが、たまたまこのサービスを知って、試しにと思ってチャットを開いてみたんです。聞かれる質問は登記の時に考えた内容でしたから最寄駅に着く前にはサイトができていました。"
+    }
+  ]
+}

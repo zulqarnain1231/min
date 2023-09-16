@@ -1,22 +1,10 @@
 import React from "react";
 import ComponentWrapper from "../../Shared/Wrappers/ComponentWrapper";
 import User from "./User";
+import Data from "../../../constants/Data/Data.json";
 
 const Recomendation = () => {
-  const recomendations = [
-    {
-      detail: " 会社の事を知ってもらえるよう 名刺の代わりにしたい",
-      picture: "/Assets/Recomendations/user1.png",
-    },
-    {
-      detail: " 会社の事やサービスの 情報発信をしたい",
-      picture: "/Assets/Recomendations/user2.png",
-    },
-    {
-      detail: " ホームページによる 信頼の獲得をしたい",
-      picture: "/Assets/Recomendations/user3.png",
-    },
-  ];
+  const { recomendations } = Data;
   return (
     <ComponentWrapper
       id="recomendation"

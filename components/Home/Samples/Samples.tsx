@@ -4,22 +4,10 @@ import React from "react";
 import * as Icons from "../../../constants/Svg/Icons";
 import Image from "next/image";
 import SampleCard from "./SampleCard";
+import Data from "../../../constants/Data/Data.json";
 
 const Samples = () => {
-  const samples = [
-    {
-      image: "/Assets/Samples/sample1.png",
-      content: " ITスタートアップ系",
-    },
-    {
-      image: "/Assets/Samples/sample2.png",
-      content: "ハンドメイドメーカー系サイト",
-    },
-    {
-      image: "/Assets/Samples/sample3.png",
-      content: "士業系サイト",
-    },
-  ];
+  const { samples } = Data;
 
   return (
     <ComponentWrapper id="samples" style="w-full lg:py-28 py-16">
