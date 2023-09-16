@@ -76,20 +76,24 @@ const Navbar = () => {
             </button>
           </div>
           {menu.map((item: any, index: number) => (
-            <Scrolling
+            <div
               key={index}
-              activeClass="active"
-              to={item.route}
-              spy={true}
-              smooth={true}
-              hashSpy={true}
-              duration={1000}
-              href={item.route}
-              onClick={toggleDrawer}
-              className="text-black-main text-base font-normal"
+              className="w-full flex items-center justify-start p-4 border-b-[2px] "
             >
-              {item.name}
-            </Scrolling>
+              <Scrolling
+                activeClass="active"
+                to={item.route}
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                duration={1000}
+                href={item.route}
+                onClick={toggleDrawer}
+                className="text-black-main text-base font-normal"
+              >
+                {item.name}
+              </Scrolling>
+            </div>
           ))}
           <div className="w-full flex items-center justify-center mt-8">
             <button className="h-[54px] w-[230px] flex items-center justify-center gap-2 bg-brand-main rounded-[100px] text-white-main text-base font-normal">
