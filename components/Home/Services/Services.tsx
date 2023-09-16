@@ -9,7 +9,7 @@ const Services = () => {
   const { services } = Data;
   return (
     <ComponentWrapper
-      id="services"
+      id="features"
       style="lg:py-16 py-10 w-full bg-[url('/Assets/Services/servicebg.png')] bg-cover bg-no-repeat bg-top"
     >
       <div className="w-full flex flex-col items-center justify-start gap-16">

@@ -8,6 +8,7 @@ import { ImCross } from "react-icons/im";
 import Drawer from "react-modern-drawer";
 import "react-modern-drawer/dist/index.css";
 import Data from "../../../constants/Data/Data.json";
+import { Link as Scrolling } from "react-scroll";
 
 const Navbar = () => {
   const { menu } = Data;
@@ -34,13 +35,19 @@ const Navbar = () => {
         <div className="h-full lg:flex hidden items-center justify-start gap-8">
           <div className="h-full flex justify-start items-center gap-4">
             {menu.map((item: any, index: number) => (
-              <Link
-                href={item.route}
+              <Scrolling
                 key={index}
+                activeClass="active"
+                to={item.route}
+                spy={true}
+                smooth={true}
+                hashSpy={true}
+                duration={1000}
+                href={item.route}
                 className="text-black-main text-base font-normal"
               >
                 {item.name}
-              </Link>
+              </Scrolling>
             ))}
           </div>
           <button className="h-[54px] w-[230px] flex items-center justify-center gap-2 bg-brand-main rounded-[100px] text-white-main text-base font-normal">
@@ -69,14 +76,20 @@ const Navbar = () => {
             </button>
           </div>
           {menu.map((item: any, index: number) => (
-            <Link
-              href={item.route}
+            <Scrolling
               key={index}
-              className={`text-black-main w-full text-base font-normal p-4 border-b-[2px]
-              `}
+              activeClass="active"
+              to={item.route}
+              spy={true}
+              smooth={true}
+              hashSpy={true}
+              duration={1000}
+              href={item.route}
+              onClick={toggleDrawer}
+              className="text-black-main text-base font-normal"
             >
               {item.name}
-            </Link>
+            </Scrolling>
           ))}
           <div className="w-full flex items-center justify-center mt-8">
             <button className="h-[54px] w-[230px] flex items-center justify-center gap-2 bg-brand-main rounded-[100px] text-white-main text-base font-normal">

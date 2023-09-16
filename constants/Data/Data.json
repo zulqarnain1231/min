@@ -2,24 +2,24 @@
   "menu": [
     {
       "name": "商品特徴",
-      "route": "#"
+      "route": "features"
     },
     {
       "name": "制作サンプル",
-      "route": "#"
+      "route": "samples"
     },
     {
       "name": "料金",
-      "route": "fee"
+      "route": "price"
     },
     {
       "name": "お客様の声",
-      "route": "#"
+      "route": "voice"
     },
 
     {
       "name": "よくある質問",
-      "route": "#"
+      "route": "faq"
     }
   ],
   "services": [

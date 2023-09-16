@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import * as Icons from "../../../constants/Svg/Icons";
 import Data from "../../../constants/Data/Data.json";
+import { Link as Scrolling } from "react-scroll";
 
 const Footer = () => {
   const { menu } = Data;
@@ -14,9 +15,14 @@ const Footer = () => {
         <div className="w-full md:grid flex flex-col-reverse items-center justify-start md:gap-0 gap-6  md:grid-cols-2">
           {/* left side */}
           <div className="w-full flex flex-col md:items-start items-center justify-start gap-6">
-            <Link
-              href={"/"}
-              className="md:h-[60px] h-[46px] md:w-[250px] w-[200px] relative"
+            <Scrolling
+              activeClass="active"
+              to={"hero"}
+              spy={true}
+              smooth={true}
+              hashSpy={true}
+              duration={1000}
+              className="md:h-[60px] h-[46px] md:w-[250px] w-[200px] relative cursor-pointer"
             >
               <Image
                 className="w-full h-full object-contain"
@@ -25,7 +31,7 @@ const Footer = () => {
                 priority
                 fill
               />
-            </Link>
+            </Scrolling>
             <div className="w-full flex lg:flex-nowrap flex-wrap items-center md:justify-start justify-center gap-4">
               <p className="text-black-main text-sm font-medium font-noto">
                 運営会社
@@ -42,13 +48,19 @@ const Footer = () => {
           <div className="w-full flex flex-col items-start justify-start gap-6">
             <div className="w-full grid xl:grid-cols-5 grid-cols-2 gap-2 place-items-center">
               {menu.map((item: any, index: number) => (
-                <Link
+                <Scrolling
                   key={index}
+                  activeClass="active"
+                  to={item.route}
+                  spy={true}
+                  smooth={true}
+                  hashSpy={true}
+                  duration={1000}
                   href={item.route}
                   className="text-black-main text-base font-semibold"
                 >
                   {item.name}
-                </Link>
+                </Scrolling>
               ))}
             </div>
             <div className="w-full flex items-center md:justify-end justify-center">
